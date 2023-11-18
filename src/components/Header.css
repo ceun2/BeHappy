@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  height: 10vh;
+  color: white;
+  background-color: yellow;
+}
