@@ -3,7 +3,13 @@
   padding: 0;
 }
 h1 {
-  height: 10vh;
+  margin: 30px;
   color: white;
-  background-color: yellow;
+  font-family: 함초롬돋움;
+}
+#header {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffdb58;
 }
