@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#diary {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 40vw;
+  height: 5vh;
+  font-family: 함초롬돋움;
+}
+#star {
+  width: 40vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+#write {
+  width: 40vw;
+  height: 30vh;
+  resize: none;
+}
+input,
+#star,
+#write {
+  margin-top: 5vh;
+}
+button {
+  border: none;
+  color: ivory;
+  font-weight: 900;
+  box-shadow: none;
+  margin-top: 10px;
+  padding: 7px 20px;
+  align-self: flex-end;
+  border-radius: 10px;
+  font-family: 함초롬돋움;
+  background-color: #fad44a;
+}
+button:hover {
+  background-color: #f2c468;
+}
