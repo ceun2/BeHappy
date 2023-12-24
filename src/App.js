@@ -14,10 +14,9 @@ function App() {
 
   //새로운 일기 추가하는 함수
   const onCreate = (date, rating, content) => {
-    const created_date = new Date().getTime();
     const newItem = {
       id: dataId.current,
-      created_date,
+      date,
       rating,
       content,
     };

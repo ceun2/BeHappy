@@ -9,25 +9,25 @@ const Diary = ({ onCreate }) => {
 
   const [state, setState] = useState({
     date: '',
-    rating: 1,
+    rating: 0,
     content: '',
   });
 
   //폼 입력값 처리
   const handleChangeState = (e) => {
-    setState({
-      ...state,
+    setState((prevState) => ({
+      ...prevState,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     onCreate(state.date, state.rating, state.content);
-    alert('기록완료!');
-    //글 초기화
+    alert(JSON.stringify(state));
     setState({
       date: '',
-      rating: 1,
+      rating: 0,
       content: '',
     });
   };
@@ -58,9 +58,7 @@ const Diary = ({ onCreate }) => {
           value={state.content}
           onChange={handleChangeState}
         />
-        <button type="submit" onClick={handleSubmit}>
-          기록하기
-        </button>
+        <button onClick={handleSubmit}>기록하기</button>
       </form>
     </div>
   );
