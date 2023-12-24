@@ -1,7 +1,10 @@
 .calendar {
-  /* margin: 100px; */
+  margin-top: 8vh;
 }
 #container {
   display: flex;
   justify-content: center;
+}
+.react-datepicker__day {
+  width: 3rem !important;
 }
