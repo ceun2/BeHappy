@@ -19,22 +19,22 @@ input {
   width: 40vw;
   height: 5vh;
   font-family: 함초롬돋움;
+  margin-top: 3vh;
 }
-#star {
+#rating {
   width: 40vw;
-  height: 10vh;
-  border: 1px solid black;
+  height: 3vh;
+  display: flex;
+  font-size: 1rem;
+  margin-top: 1vh;
 }
 #write {
   width: 40vw;
   height: 30vh;
   resize: none;
+  margin-top: 3vh;
 }
-input,
-#star,
-#write {
-  margin-top: 5vh;
-}
+
 button {
   border: none;
   color: ivory;
