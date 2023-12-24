@@ -1,3 +1,7 @@
 .calendar {
-  margin: 100px;
+  /* margin: 100px; */
+}
+#container {
+  display: flex;
+  justify-content: center;
 }

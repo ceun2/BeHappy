@@ -39,3 +39,9 @@
 #main {
   display: flex;
 }
+#left {
+  width: 40vw;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+}

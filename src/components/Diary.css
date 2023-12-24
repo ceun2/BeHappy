@@ -5,6 +5,7 @@
 #diary {
   flex-grow: 1;
   display: flex;
+  height: 87vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
