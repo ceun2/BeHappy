@@ -2,7 +2,6 @@ import './App.css';
 import './components/Header';
 import Diary from './components/Diary';
 import Header from './components/Header';
-import History from './components/History';
 import Calendar from './components/Calendar';
 
 import React, { useState, useRef } from 'react';
@@ -21,15 +20,15 @@ function App() {
       content,
     };
     dataId.current += 1;
-    setData([newItem, ...data]);
+    setData([...data, newItem]);
   };
+  console.log(data);
   return (
     <div>
       <Header></Header>
       <div id="main">
         <div id="left">
-          <Calendar></Calendar>
-          <History></History>
+          <Calendar myData={data}></Calendar>
         </div>
         <Diary onCreate={onCreate} />
       </div>

@@ -8,3 +8,38 @@
 .react-datepicker__day {
   width: 3rem !important;
 }
+.react-datepicker__day--highlighted {
+  background-color: pink !important;
+}
+.react-datepicker__day--selected {
+  background-color: rgb(20, 125, 200) !important;
+}
+
+#history {
+  visibility: hidden;
+
+  flex-grow: 1;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+}
+#content {
+  width: 30vw;
+  max-height: 10vh;
+  color: rgb(51, 51, 51);
+  padding: 10px;
+  margin-top: 15px;
+  overflow: auto;
+  border: 0.5px solid grey;
+}
+#percent {
+  width: 30vw;
+  font-size: 2rem;
+  font-family: 함초롬돋움;
+}
+.highlight {
+  color: red;
+}
