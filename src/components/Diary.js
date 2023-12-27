@@ -15,11 +15,6 @@ const Diary = ({ onCreate }) => {
 
   //폼 입력값 처리
   const handleChangeState = (e) => {
-    const value =
-      e.target.name === 'rating'
-        ? parseInt(e.target.value, 10)
-        : e.target.value;
-
     setState((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -29,6 +24,7 @@ const Diary = ({ onCreate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onCreate(state.date, state.rating, state.content);
+    // alert(JSON.stringify(state));
     setState({
       date: '',
       rating: 0,
@@ -45,17 +41,23 @@ const Diary = ({ onCreate }) => {
           value={state.date}
           onChange={handleChangeState}
         />
-        <div style={{ marginTop: '20px' }}>
-          행복 지수를 퍼센트로 입력하세요!
+        <div style={{ marginTop: '20px', fontFamily: '함초롬돋움' }}>
+          오늘의 행복 지수를 조정하세요!
         </div>
-        <input
-          id="rating"
-          ref={ratingInput}
-          name="rating"
-          value={state.rating}
-          onChange={handleChangeState}
-        />
-        <div style={{ marginTop: '40px' }}>오늘의 일기</div>
+        <div id="rate-container">
+          <span id="rate-num">{state.rating}%</span>
+          <input
+            id="rating"
+            type="range"
+            min="0"
+            max="100"
+            ref={ratingInput}
+            name="rating"
+            value={state.rating}
+            onChange={handleChangeState}
+          />
+        </div>
+        <div style={{ marginTop: '30px' }}> 오늘의 일기</div>
         <textarea
           id="write"
           ref={contentInput}

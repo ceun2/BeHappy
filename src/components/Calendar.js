@@ -63,7 +63,7 @@ export default function Calendar({ myData }) {
       <div id="history" ref={historyRef}>
         <div
           id="percent"
-          style={{ color: percent >= 50 ? '#e62677' : '#ffa4b3' }}
+          style={{ color: percent >= 50 ? '#004780' : '#7894bf' }}
         >
           행복지수 : {percent}%
         </div>

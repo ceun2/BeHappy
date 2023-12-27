@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 함초롬돋움;
 }
 #diary {
   flex-grow: 1;
@@ -23,17 +24,19 @@ input {
   margin-top: 3vh;
 }
 #rating {
-  width: 40vw;
+  width: 34vw;
   height: 3vh;
   display: flex;
   font-size: 1rem;
   margin-top: 1vh;
+
+  accent-color: rgb(15, 118, 153);
 }
 #write {
   width: 40vw;
   height: 30vh;
   resize: none;
-  margin-top: 10px;
+  margin-top: 1vh;
 }
 
 button {
@@ -50,4 +53,18 @@ button {
 }
 button:hover {
   background-color: #f2c468;
+}
+#rate-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+#rate-num {
+  width: 6vw;
+  font-size: 1.8rem;
+  font-family: 함초롬돋움;
+  /* margin-right: 20px; */
 }

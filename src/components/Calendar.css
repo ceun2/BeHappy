@@ -9,10 +9,12 @@
   width: 3rem !important;
 }
 .react-datepicker__day--highlighted {
-  background-color: pink !important;
+  background-color: skyblue !important;
+  /* background-color: pink !important; */
 }
 .react-datepicker__day--selected {
-  background-color: rgb(20, 125, 200) !important;
+  /* background-color: rgb(20, 125, 200) !important; */
+  background-color: rgb(15, 118, 153) !important;
 }
 
 #history {
