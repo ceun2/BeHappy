@@ -36,9 +36,11 @@
     transform: rotate(360deg);
   }
 } */
+
 #main {
   display: flex;
 }
+
 #left {
   width: 40vw;
   height: 87vh;

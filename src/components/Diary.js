@@ -15,6 +15,11 @@ const Diary = ({ onCreate }) => {
 
   //폼 입력값 처리
   const handleChangeState = (e) => {
+    const value =
+      e.target.name === 'rating'
+        ? parseInt(e.target.value, 10)
+        : e.target.value;
+
     setState((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -24,7 +29,6 @@ const Diary = ({ onCreate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onCreate(state.date, state.rating, state.content);
-    alert(JSON.stringify(state));
     setState({
       date: '',
       rating: 0,
@@ -51,6 +55,7 @@ const Diary = ({ onCreate }) => {
           value={state.rating}
           onChange={handleChangeState}
         />
+        <div style={{ marginTop: '40px' }}>오늘의 일기</div>
         <textarea
           id="write"
           ref={contentInput}
